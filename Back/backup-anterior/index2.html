@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+        <title>ROLON VALLEY</title>
+        <meta name="keywords" content="audiovisual, cliente, comunicacion, creatividad, grupo, marketing, rolon valley, servicios, soluciones 360, soluciones integrales"/>
+		<meta name="description" content="Rolon Valley es un grupo dedicado a ofrecer servicios de soluciones integrales a medida de las necesidades de cada cliente."/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ============== Resources style ============== -->
+        <link rel="stylesheet" href="css/style.css" />
+
+		<!-- Modernizr runs quickly on page load to detect features -->
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	
+	<body>
+
+		<!-- YouTube link -->
+		<a id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/eSnhTZQ1m8I',containment:'body',autoPlay:true, mute:false, startAt:0, stopAt:0, opacity:1}"></a>
+
+		<!-- Page preloader -->
+		<div id="loading">
+			<div id="preloader">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	
+		<!-- START - Home part -->
+		<div class="outer-home">
+		
+			<!-- START - Home section -->
+			<section id="home">
+
+				<!-- Overlay -->
+				<div class="global-overlay"></div>
+
+				<!-- Your logo -->
+				<img src="img/logo.png" alt="" class="brand-logo text-intro opacity-0" />
+
+				<!-- START - Content -->
+				<div class="content">
+
+					<h1 class="text-intro opacity-0">Próximamente</h1>
+
+				</div>
+				<!-- END - Content -->
+
+				<!-- OPEN - Player control -->
+				<nav id="player-nav">
+					<ul>
+						<li data-toggle="tooltip" data-placement="bottom" data-title="Play" data-trigger="hover">
+							<a onclick="$('#bgndVideo').playYTP()"><i class="fa fa-play"></i></a>
+						</li>
+
+						<li data-toggle="tooltip" data-placement="bottom" data-title="Pause" data-trigger="hover">
+							<a onclick="$('#bgndVideo').pauseYTP()"><i class="fa fa-pause"></i></a>
+						</li>
+
+						<li class="full-play" data-toggle="tooltip" data-placement="bottom" data-title="Fullscreen" data-trigger="hover">
+							<a class="expand-player"><i class="fa fa-expand"></i></a>
+						</li>
+
+						<li class="comp-play display-none" data-toggle="tooltip" data-placement="bottom" data-title="Reduce" data-trigger="hover">
+							<a class="compress-player"><i class="fa fa-compress"></i></a>
+						</li>
+
+					</ul>
+				</nav> <!-- CLOSE - Player control -->
+
+				<!-- START - Bottom home -->
+				<div class="bottom-home">
+					
+					<!-- Social icons, replace # by your links -->
+					<div class="social-icons">
+
+						<a href="https://www.facebook.com/RolonValley" target="_blank"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/rolonvalley" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://vimeo.com/rolonvalley" target="_blank"><i class="fa fa-vimeo"></i></a>
+
+					</div>
+				</div>
+				<!-- END - Bottom home -->
+
+			</section>
+			<!-- END - Home section -->
+
+		</div>
+		<!-- END - Home part -->
+
+		<!-- Transparent div used when more info part is opening, allow the user to click on the home to get back on it -->
+		<div class="close-right-part layer-left hide-layer-left"></div>
+
+		<!-- Skew left border info part -->
+		<div class="border-right-side hide-border"></div>
+
+
+		<!-- Cross to close the More Informations part -->
+		<button id="close-more-info" class="close-right-part hide-close"><i class="icon ion-android-close"></i></button>
+
+		<!-- START - Newsletter Popup -->
+		<div id="somedialog" class="dialog">
+
+			<div class="dialog__overlay"></div>
+					
+			<!-- START - dialog__content -->
+			<div class="dialog__content">
+						
+				<!-- START - dialog-inner -->
+				<div class="dialog-inner">
+							
+					<h4>You like taking the lead of line?</h4>
+							
+					<p>Being the first to know always feels great... Signing up to our newsletter gives you <strong>exclusive access to our Grand Opening!</strong></p>
+
+					<!-- START - Newsletter Form -->
+					<div id="subscribe">
+
+		                <form action="php/notify-me.php" id="notifyMe" method="POST">
+
+		                    <div class="form-group">
+
+		                        <div class="controls">
+		                            
+		                        	<!-- Field  -->
+		                        	<input type="text" id="mail-sub" name="email" placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to write your email'" class="form-control email srequiredField" />
+
+		                        	<!-- Spinner top left during the submission -->
+		                        	<i class="fa fa-spinner opacity-0"></i>
+
+		                            <!-- Button -->
+		                            <button class="btn btn-lg submit">Get notified</button>
+
+		                            <div class="clear"></div>
+
+		                        </div>
+
+		                    </div>
+
+		                </form>
+
+						<!-- Answer for the newsletter form is displayed in the next div, do not remove it. -->
+						<div class="block-message">
+
+							<div class="message">
+
+								<p class="notify-valid"></p>
+
+							</div>
+
+						</div>
+
+        			</div>
+        			<!-- END - Newsletter Form -->
+
+				</div>
+				<!-- END - dialog-inner -->
+
+				<!-- Cross to close the Newsletter Popup -->
+				<button class="close-newsletter" data-dialog-close><i class="icon ion-android-close"></i></button>
+
+			</div>
+			<!-- END - dialog__content -->
+						
+		</div>
+		<!-- END - Newsletter Popup -->
+
+		<!-- END - Root element of PhotoSwipe, the gallery. Must have class pswp. -->
+
+		<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+	    <!-- ********** Resources jQuery ********** -->
+	    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+		
+		<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.easings.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Newsletter plugin -->
+		<script src="js/notifyMe.js"></script>
+
+		<!-- Contact form plugin -->
+		<script src="js/contact-me.js"></script>
+
+		<!-- Slideshow/Image plugin -->
+		<script src="js/vegas-youtube-mobile.js"></script>
+
+		<!-- YouTube plugin -->
+		<script src="js/jquery.mb.YTPlayer.js"></script>
+
+		<!-- Scroll plugin -->
+		<script src="js/jquery.mousewheel.js"></script>
+
+		<!-- Custom Scrollbar plugin -->
+		<script src="js/jquery.mCustomScrollbar.js"></script>
+
+		<!-- Popup Newsletter Form -->
+		<script src="js/classie.js"></script>
+		<script src="js/dialogFx.js"></script>
+
+		<!-- PhotoSwipe Core JS file -->
+		<script src="js/photoswipe.js"></script> 
+
+		<!-- PhotoSwipe UI JS file -->
+		<script src="js/photoswipe-ui-default.js"></script>
+
+		<!-- Countdown plugin -->
+		<script src="js/jquery.countdown.js"></script>
+
+		<script>
+		$("#getting-started")
+			// Year/Month/Day Hour:Minute:Second
+			.countdown("2016/10/24 15:30:30", function(event) {
+				$(this).html(
+					event.strftime('<strong>%D Days</strong> %Hh %Mm %Ss')
+				);
+		});
+		</script>
+
+		<!-- Main JS File -->
+		<script src="js/main-youtube.js"></script>
+		
+		<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+	</body>
+
+</html>

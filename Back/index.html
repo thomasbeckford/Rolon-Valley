@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rolon Valley</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Productora">
+    <meta name="keywords" content="rolon valley, productora, cine, videos, rey primate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrapv337/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    <link rel="stylesheet" href="css/pushy.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Animations -->
+    <link rel="stylesheet" href="css/ngDialog.css">
+    <link rel="stylesheet" href="css/ngDialog-theme-default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+</head>
+
+<body ng-app="testPadding" ng-controller="MainCtrl">
+    <nav class="pushy pushy-right main-menu">
+        <section id="menuitems" class="pushy-content">
+            <a class="menu-btn"><i class="fa fa-close" ></i></a>
+            <ul>
+                <li class="pushy-link"><a href="#principal">Principal</a>
+                </li>
+                <li class="pushy-link"><a class="btn btn-5" ng-click="openunix()">Clientes</a>
+                </li>
+                <li class="pushy-link"><a href="#trabajos">Trabajos</a>
+                </li>
+                <li class="pushy-link"><a href="#nosotros">Nosotros</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+
+    <div class="site-overlay"></div>
+
+    <section id="principal" class="push">
+        <div class="homepage-hero-module">
+            <div class="video-container">
+
+                <img id="logo" src="images/logo/rolon.png" alt="">
+                <!--<img class="animated bounceInLeft" id="title" src="images/logo/title.png" alt="">   <h1>Rolon Valley</h1> -Title-->
+                <a class="menu-btn"><i class="fa fa-bars"></i></a>
+
+                <body>
+                  <!-- 1. YOUTUBE API -->
+              <div id='wrap-player'>
+                  <div class="video-container">
+                      <div id="player" style="width: 1200px; height:500px; padding-top: 100px"></div>
+                  </div>
+              </div>
+    </section>
+
+    <section id="info" class="push">
+        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+            <img class="animated bounceInLeft" id="title2" src="images/logo/title.png" alt="">
+            <!-- Logo -->
+            <p style="font-size:18px;">
+                En 2013 formamos una productora con ganas de crear.
+                <br> Publicidad, ficción, video clips, motion graphics y contenido web.
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <img src="images/info/1.png" class="animated wow fadeInUp" data-wow-delay=".3s" alt="" />
+                        <h3>AUDIOVISUAL</h3>
+                        <p>Hacemos lo que nos gusta, por eso lo hacemos bien. Publicidad, ficci&oacute;n, video clips, motion graphics y contenido web.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <a href="#info" class="btn btn-5" ng-click="openunix()"><img src="images/info/3.png" class="animated wow fadeInUp" data-wow-delay=".2s" alt="" />
+                        </a>
+                        <h3>ESTRATEGIA</h3>
+                        <p>La buena comunicaci&oacute;n genera confianza.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <img src="images/info/2.png" class="animated wow fadeInUp" data-wow-delay=".3s" alt="" />
+                        <h3>INTERDISCIPLINA</h3>
+                        <p>La suma de las partes hacen el mejor todo.
+                            <br>Cortos, diseño gr&aacute;fico, ilustraciones y animaci&oacute;n.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trabajos" class="push">
+        <h2>TRABAJOS</h2>
+
+        <section>
+            <article>
+                <figure>
+                    <a href="http://player.vimeo.com/video/218047703?title=0&byline=0&portrait=0&badge=0&color=e6ae9e&autoplay=true" data-rel="lightcase:myCollection">
+                        <img src="images/works/01.png">
+                        <p>
+                            <span class="img_title">GUION-DIRECCIÓN-PRODUCCI&Oacute;N-ANIMACI&Oacute;N-EDICI&Oacute;N</span>
+                            <span class="img_autor">INNOVOS</span>
+                            <span class="img_desc"> Campaña - Innovos</span>
+                        </p>
+                    </a>
+                </figure>
+            </article>
+
+            <article>
+                <figure>
+                    <a href="http://player.vimeo.com/video/189220179?title=0&byline=0&portrait=0&badge=0&color=e6ae9e&autoplay=true" data-rel="lightcase:myCollection">
+                        <img src=images/works/02.png>
+                        <span class="img_title">GUION-DIRECCI&Oacute;N-PRODUCCI&Oacute;N-ANIMACI&Oacute;N-EDICI&Oacute;N</span>
+                        <span class="img_autor">REY PRIMATE</span>
+                        <span class="img_desc">Video clip - Perro no ladra</span>
+                    </a>
+                </figure>
+            </article>
+
+            <article>
+                <figure>
+                    <a href="http://player.vimeo.com/video/120394604?title=0&byline=0&portrait=0&badge=0&color=e6ae9e&autoplay=true" data-rel="lightcase:myCollection">
+                        <img src=images/works/03.png>
+                        <p>
+                            <span class="img_title">DIRECCI&Oacute;N-EDICI&Oacute;N</span>
+                            <span class="img_autor">TREGUA</span>
+                            <span class="img_desc">Campaña Blocker</span>
+                        </p>
+                    </a>
+                </figure>
+            </article>
+
+            <article>
+                <figure>
+                    <a href="http://player.vimeo.com/video/167309577?title=0&byline=0&portrait=0&badge=0&color=e6ae9e&autoplay=true" data-rel="lightcase:myCollection">
+                        <img src=images/works/04.png>
+                        <p>
+                            <span class="img_title">GUION-DIRECCI&Oacute;N-DISEÑO-ANIMACI&Oacute;N-M&Uacute;SICA</span>
+                            <span class="img_autor">SERENDIPYA</span>
+                            <span class="img_desc">Campaña Travel</span>
+                        </p>
+                    </a>
+                </figure>
+            </article>
+
+            <article>
+                <figure>
+                    <a href="http://player.vimeo.com/video/152993031?title=0&byline=0&portrait=0&badge=0&color=e6ae9e&autoplay=true" data-rel="lightcase:myCollection">
+                        <img src=images/works/05.png>
+                        <p>
+                            <span class="video-thumbnail"> </span>
+                            <span class="img_title">ANIMACI&Oacute;N</span>
+                            <span class="img_autor">GRUPO LAMINAR</span>
+                            <span class="img_desc">Campaña GL</span>
+                        </p>
+                    </a>
+                </figure>
+            </article>
+
+            <article>
+                <figure>
+                    <a href="http://player.vimeo.com/video/216720186?title=0&byline=0&portrait=0&badge=0&color=e6ae9e&autoplay=true" data-rel="lightcase:myCollection">
+                        <img src=images/works/06.png>
+                        <p>
+                            <span class="video-thumbnail"> </span>
+                            <span class="img_title">DIRECCI&Oacute;N-EDICI&Oacute;N</span>
+                            <span class="img_autor">BHLV</span>
+                            <span class="img_desc">Design Video</span>
+                        </p>
+                    </a>
+                </figure>
+            </article>
+
+            <article>
+                <figure>
+                    <a href="http://player.vimeo.com/video/106203155?title=0&byline=0&portrait=0&badge=0&color=e6ae9e&autoplay=true" data-rel="lightcase:myCollection">
+                        <img src=images/works/07.png>
+                        <p id="photos">
+                            <span class="video-thumbnail"> </span>
+                            <span class="img_title">DIRECCI&Oacute;N-PRODUCCI&Oacute;N-EDICI&Oacute;N</span>
+                            <span class="img_autor">PUMAS-RENAULT</span>
+                            <span class="img_desc">Campaña Himno</span>
+                        </p>
+                    </a>
+                </figure>
+            </article>
+
+            <article>
+                <figure>
+                    <a href="http://player.vimeo.com/video/141955743?title=0&byline=0&portrait=0&badge=0&color=e6ae9e&autoplay=true" data-rel="lightcase:myCollection">
+                        <img src=images/works/08.png>
+                        <p id="photos">
+                            <span class="video-thumbnail"> </span>
+                            <span class="img_title">DIRECCI&Oacute;N-PRODUCCI&Oacute;N-EDICI&Oacute;N-ANIMACI&Oacute;N</span>
+                            <span class="img_autor">SOCIALAB</span>
+                            <span class="img_desc">Campaña Estamos Comprometidos</span>
+                            </p</a>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <a href="http://player.vimeo.com/video/217900974?title=0&byline=0&portrait=0&badge=0&color=e6ae9e&autoplay=true" data-rel="lightcase:myCollection">
+                        <img src=images/works/09.png>
+                        <p id="photos">
+                            <span class="video-thumbnail"> </span>
+                            <span class="img_title">ILUSTRACI&Oacute;N-ANIMACI&Oacute;N</span>
+                            <span class="img_autor">ESPN</span>
+                            <span class="img_desc oblique">Comunicaci&oacute;n interna</span>
+                        </p>
+                    </a>
+                </figure>
+            </article>
+
+        </section>
+    </section>
+
+
+    <section id="nosotros" class="push">
+        <div class="container">
+
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="title-block">
+
+                            <h3><b>NOSOTROS</b> SOMOS</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="container content text-center">
+                <div class="row">
+                    <div class="col-md-4 service">
+
+
+                        <img src="images/weare/eche.png" width="75%" height="75%" class="img-responsive">
+                        <br>
+                        <h2>Ignacio Etchebarne</h2>
+                        <p>DIRECTOR</p>
+                    </div>
+
+                    <div class="col-md-4 service">
+                        <img src="images/weare/efe.png" class="img-responsive">
+                        <br>
+                        <h2>Efe Vogelius</h2>
+                        <p>PRODUCTOR & GUIONISTA</p>
+                    </div>
+
+                    <div class="col-md-4 service">
+                        <img src="images/weare/fede.png" width="75%" height="75%" class="img-responsive">
+                        <br>
+                        <h2>Federico López Hilaire</h2>
+                        <p>DIRECTOR</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <span style="display:block; height: 50px;"></span>
+
+        <a style="font-size: 16px; color:grey" href="mailto:info@rolonvalley.com?Subject=Hello" target="_top">info@rolonvalley.com</a>
+        <ul class="soc">
+            <li>
+                <a class="soc-facebook" target="_blank" href="https://www.facebook.com/RolonValleyPage/"></a>
+            </li>
+            <li>
+                <a class="soc-vimeo" target="_blank" href="https://vimeo.com/rolonvalley"></a>
+            </li>
+            <li>
+                <a class="soc-instagram soc-icon-last" target="_blank" href="https://www.instagram.com/rolonvalley/"></a>
+            </li>
+        </ul>
+
+        <span style="display:block; height: 30px;"></span>
+
+    </section>
+
+    <footer class="site-footer push">
+        <span style="background-color:#333; display:block; height: 20px;"></span>
+        <p style="color: #d3d3d3;font-size: 17px" class="copyright">&copy;2017 RolonValley. Todos los derechos reservados.
+            <br>
+            <span style="font-size: 10px">Programacion:</span>
+            <a style="font-size: 9px; color:white" href="mailto:tebeckford@gmail.com?Subject=Hello" target="_top"> tebeckford@gmail.com</a>
+    </footer>
+    </body>
+
+    <!-- Templates -->
+    <script type="text/ng-template" id="unix">
+        <section id="modalheader">
+            <section>
+                <img src="images/info/3.png" width="15%" height="15%">
+                <h3>ESTRA<span>TEGIA</span></h3>
+                <p>La buena comunicacion genera confianza</p>
+            </section>
+        </section>
+        <section id="modalbody">
+            <img src="images/brands/1.png" width="15%" height="15%">
+            <img src="images/brands/2.png" width="15%" height="15%">
+            <img src="images/brands/3.png" width="15%" height="15%">
+            <img src="images/brands/4.png" width="10%" height="10%">
+            <img src="images/brands/5.png" width="10%" height="10%">
+            <br>
+            <img src="images/brands/6.png" width="14%" height="14%">
+            <img src="images/brands/7.png" width="14%" height="14%">
+            <img src="images/brands/8.png" width="14%" height="14%">
+            <img src="images/brands/9.png" width="14%" height="14%">
+            <img src="images/brands/10.png" width="10%" height="10%">
+            <br>
+            <img src="images/brands/11.png" width="10%" height="10%">
+            <img src="images/brands/12.png" width="17%" height="17%">
+            <img src="images/brands/13.png" width="10%" height="10%">
+            <img src="images/brands/14.png" width="15%" height="15%">
+            <img src="images/brands/15.png" width="10%" height="10%">
+        </section>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/pushy.min.js"></script>
+        <script src="js/lightcase.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="js/animatedModal.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+        <script src="js/ngDialog.js"></script>
+        <script src="js/angularsc.js"></script>
+
+</html>
